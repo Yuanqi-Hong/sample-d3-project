@@ -42,8 +42,6 @@
   <div class="row">
     <div class="col-12">
       <h1>Events in D3</h1>
-
-      <p class="alert alert-warning small">You'll need to run a <strong>local web server</strong> to make this work. Start with <code>python</code>, then we'll move to <code>parcel</code>.</p>
       <p>This page also exists with <a href="solo.html">just the graphic</a></p>
     </div>
   </div>
@@ -56,7 +54,7 @@
         Asia, or
         S. America
       </p>
-      <div id="info" style="display: none">
+      <div id="info" style="display: none; background-color: #222222; color: white; word-wrap: break-word; padding: 10px">
         <p>
           <strong id="name"></strong> has a life expectancy of <strong id="life"></strong> and a per capita GDP of <strong id="GDP"></strong>
         </p>
@@ -66,7 +64,8 @@
       <div id="chart"></div>
     </div>
   </div>
-  <!-- This is D3, our graphing library
+  <!-- This is D3, our graphing library, except that in this sample project we don't use D3 from cdn,
+    but instead we installed D3 locally on our machine and build it into our project
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script> -->
 
   <!-- Now we include our actual visualization -->
